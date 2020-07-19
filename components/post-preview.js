@@ -8,7 +8,7 @@ export default function PostPreview({
   coverImage,
   date,
   excerpt,
-  author,
+  details,
   slug,
 }) {
   return (
@@ -21,11 +21,11 @@ export default function PostPreview({
           <a className="hover:underline">{title}</a>
         </Link>
       </h3>
-      <div className="text-lg mb-4">
+      {/* <div className="text-lg mb-4">
         <DateFormater dateString={date} />
-      </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-      <Avatar name={author.name} picture={author.picture} />
+      </div> */}
+      {/* <p className="text-lg leading-relaxed mb-4">{excerpt}</p> */}
+      {/* <Avatar name={author.name} picture={author.picture} /> */}
     </div>
   )
 }

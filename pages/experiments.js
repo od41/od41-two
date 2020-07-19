@@ -8,11 +8,10 @@ import Head from 'next/head'
 import Header from '../components/header'
 import { CMS_NAME } from '../lib/constants'
 
-export default function Index({ allProjects }) {
+export default function Experiments({ allProjects }) {
   // const heroPost = allPosts[0]
   // const morePosts = allPosts.slice(1)
-  
-  const projects = allProjects.filter((project) => project.flag === 'project') // filters out all none project posts
+  const projects = allProjects.filter((project) => project.flag === 'experiment') // hide posts without the "experiment" flag
   return (
     <>
       <Layout>
@@ -32,7 +31,7 @@ export default function Index({ allProjects }) {
               excerpt={heroPost.excerpt}
             />
           )} */}
-          {projects.length > 0 && <Work page={'Projects'} projects={projects} />}
+          {projects.length > 0 && <Work page={'Experiments'} projects={projects} />}
         </Container>
       </Layout>
     </>
