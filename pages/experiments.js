@@ -31,7 +31,7 @@ export default function Experiments({ allProjects }) {
               excerpt={heroPost.excerpt}
             />
           )} */}
-          {projects.length > 0 && <Work page={'Experiments'} projects={projects} />}
+          {projects.length > 0 && <Work page={'Experiments'} projects={projects}  showAll={false}/>}
         </Container>
       </Layout>
     </>

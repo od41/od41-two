@@ -12,7 +12,8 @@ export default function Index({ allProjects }) {
   // const heroPost = allPosts[0]
   // const morePosts = allPosts.slice(1)
   
-  const projects = allProjects.filter((project) => project.flag === 'project') // filters out all none project posts
+  const projects = allProjects.filter((project) => project.flag === 'project').slice(0,2) // filters out all none project posts and slices all but first 2
+  const experiments = allProjects.filter((experiment) => experiment.flag === 'experiment').slice(0,2) // filters out all none experiment posts and slices all but first 2
   return (
     <>
       <Layout>
@@ -20,8 +21,9 @@ export default function Index({ allProjects }) {
           <title>{CMS_NAME}</title>
         </Head>
         <Container>
-          {/* <Intro /> */}
           <Header />
+          <Intro />
+          
           {/* {heroPost && (
             <HeroPost
               title={heroPost.title}
@@ -32,7 +34,8 @@ export default function Index({ allProjects }) {
               excerpt={heroPost.excerpt}
             />
           )} */}
-          {projects.length > 0 && <Work page={'Projects'} projects={projects} />}
+          {projects.length > 0 && <Work page={'Projects'} projects={projects}  showAll={true} />}
+          {experiments.length > 0 && <Work page={'Experiments'} projects={experiments} showAll={true} />}
         </Container>
       </Layout>
     </>

@@ -2,6 +2,22 @@
 
 /* Write your own custom base styles here */
 
+@font-face {
+    font-family: Francois One;
+    font-weight: 400;
+    src: url(https://fonts.googleapis.com/css2?family=Francois+One&display=swap);
+  }
+  @font-face {
+    font-family: Work Sans;
+    font-weight: 400;
+    src: url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap);
+  } 
+  @font-face {
+    font-family: Work Sans;
+    font-weight: 700;
+    src: url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap);
+  }
+
 /* Start purging... */
 @tailwind components;
 /* Stop purging. */
