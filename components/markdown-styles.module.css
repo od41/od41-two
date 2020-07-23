@@ -10,9 +10,17 @@
 }
 
 .markdown h2 {
-  @apply font-display text-3xl mt-12 mb-4 leading-snug;
+  @apply font-display uppercase text-xl mt-12 mb-4 leading-snug;
+}
+
+.markdown img {
+  @apply w-screen my-3 relative ;
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4 leading-snug;
+  @apply text-lg capitalize font-bold mt-8 mb-2 leading-snug;
+}
+
+.markdown ul li {
+  @apply list-disc ml-8;
 }

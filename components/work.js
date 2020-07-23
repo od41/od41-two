@@ -23,6 +23,7 @@ export default function Work({ page, projects, showAll }) {
             key={project.slug}
             title={project.title}
             coverImage={project.coverImage}
+            thumbnail={project.thumbnail}
             date={project.date}
             details={project.details}
             slug={project.slug}

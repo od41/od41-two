@@ -6,15 +6,18 @@ import Link from 'next/link'
 export default function PostPreview({
   title,
   coverImage,
+  thumbnail,
   date,
   excerpt,
   details,
   slug,
 }) {
+  console.log(thumbnail)
   return (
+    
     <div>
       <div className="mb-5">
-        <CoverImage slug={slug} title={title} src={coverImage} />
+        <CoverImage slug={slug} title={title} src={thumbnail} />
       </div>
       <h3 className="font-display uppercase text-3xl mb-3 leading-snug">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">

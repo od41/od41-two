@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Header() {
   return (
     <nav className="flex items-center justify-between flex-wrap bg-transparent text-xl lg:text-2xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
-      <div class="flex items-center flex-shrink-0 mr-6">
+      <div className="flex items-center flex-shrink-0 mr-6">
         <Link href="/">
           <a className="font-display uppercase text-xl md:text-2xl hover:underline">
             odafe41

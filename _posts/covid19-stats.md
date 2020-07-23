@@ -10,7 +10,7 @@ details:
   method: Usability testing, Prototyping, Interviews, Adobe XD
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
-flag: project
+flag: experiment
 ---
 
 ## Ambition

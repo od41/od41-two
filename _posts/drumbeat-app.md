@@ -1,42 +1,55 @@
 ---
 title: 'Drumbeat App'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.'
-coverImage: '/assets/blog/dynamic-routing/cover.jpg'
-date: '2020-07-16T05:35:07.322Z'
+excerpt: 'Improving the in app UX for location based messaging.'
+coverImage: '/assets/blog/drumbeat-app/cover.jpg'
+thumbnail: /assets/blog/drumbeat-app/thumb.jpg
+date: 'August 2019'
 details:
   client: Drumbeat Ltd
   platform: Mobile
   role: UX Researcher, UI Designer
-  method: Usability testing, Prototyping, Interviews, Adobe XD
+  method: Usability testing, Interviews, Prototyping, Adobe XD
 ogImage:
-  url: '/assets/blog/dynamic-routing/cover.jpg'
+  url: '/assets/blog/drumbeat-app/thumb.jpg'
 flag: project
 ---
 
 ## Ambition
-Drumbeat was reworking and optimizing all aspects of their product’s experience. The mobile app, marketing website, visual identity, copy writing and admin dashboard.
+Drumbeat App is a location based messaging service. They had launched the first version of their app on the PlayStore. They wanted a redesign of the app experience.
 
 ## Approach
-I was responsible for research, prototyping and UI design of the mobile app. Then, handover design assets to the Drumbeat team.
+For this redesign, I was responsible for research, prototyping and UI design.
 
-I began by conducting a usability test/interview session with four users to uncover any UX issues with the existing mobile app.
-
-After the tests and analysis of the data, I uncovered aesthetics, no clear value proposition for new users and ambiguous labeling.
+I began by conducting a usability test/interview session with four users to uncover any UX issues with the existing mobile app. The findings from these interviews led me to redesign the user flow, define a clear value proposition with an onboarding flow and fix confusing labels.
 
 ## Process
-Research > Information Architecture > Prototype > Iteration > Handover
+![image process-chart](/assets/blog/drumbeat-app/process-chart.jpg)
 
 ## Information Architecture
 I developed the wireﬂow that explained the new ﬂow for a user in the app.
 
-## Solution
+![image wireflow](/assets/blog/drumbeat-app/wireflow.png)
+
+## Final Solution
 
 ### Value Proposition (Show Don't Tell)
 The “why” of the app wasn’t clear. New users wanted to understand how to begin using the app.
 
-### ON BOARDING
+![image app-screens](/assets/blog/drumbeat-app/screens-1.jpg)
+
+### Onboarding
 Guide new users to the “aha” moment for the app. New users had to:
 
 * Set up their proﬁles.
 * Engage with activity from existing users which shows the user what’s possible.
 * Existing users can be followed so as to see available content when using the app.
+
+![image app-screens](/assets/blog/drumbeat-app/screens-2.jpg)
+
+## Learnings and Insight
+This project concluded with sharing a design spec with Drumbeat App’s development team via Zeplin. There were a few insights that I took out of it
+
+1. ### Talking to users uncovers your bias
+During the interviews, some users observations were surprising. I didn't notice that when I was on my own. It reinforced the value of talking to users.
+
+This will be valuable in future projects.
