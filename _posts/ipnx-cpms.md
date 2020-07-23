@@ -1,42 +1,30 @@
 ---
 title: 'ipNX CPMS'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.'
-coverImage: '/assets/blog/dynamic-routing/cover.jpg'
-date: '2020-07-16T05:35:07.322Z'
+excerpt: 'A portal for technical and service support contractors to interface with the internal ticketing system(s); and also as a performance management tool'
+coverImage: '/assets/blog/ipnx-cpms/cover.jpg'
+thumbnail: /assets/blog/ipnx-cpms/thumb.jpg
+date: 'June 2020'
 details:
-  client: Drumbeat Ltd
-  platform: Mobile
+  client: ipNX Nigeria Ltd
+  platform: Web
   role: UX Researcher, UI Designer
-  method: Usability testing, Prototyping, Interviews, Adobe XD
+  method: Prototyping, Adobe XD
 ogImage:
-  url: '/assets/blog/dynamic-routing/cover.jpg'
+  url: '/assets/blog/ipnx-cpms/cover.jpg'
 flag: project
 ---
 
 ## Ambition
-Drumbeat was reworking and optimizing all aspects of their product’s experience. The mobile app, marketing website, visual identity, copy writing and admin dashboard.
+A portal for technical and service support contractors to interface with the internal ticketing system(s); and also as a performance management tool.
 
 ## Approach
-I was responsible for research, prototyping and UI design of the mobile app. Then, handover design assets to the Drumbeat team.
-
-I began by conducting a usability test/interview session with four users to uncover any UX issues with the existing mobile app.
-
-After the tests and analysis of the data, I uncovered aesthetics, no clear value proposition for new users and ambiguous labeling.
+This project had a narrow window for any intentional UX design to be incorporated (less than 2 weeks). I didn’t want to reinvent the wheel. I used the prepared user flow and SRS (software requirement spec) to quickly search for already existing designs, assessing them for fit.
 
 ## Process
-Research > Information Architecture > Prototype > Iteration > Handover
+![image process-chart](/assets/blog/ipnx-cpms/process-chart.jpg)
 
-## Information Architecture
-I developed the wireﬂow that explained the new ﬂow for a user in the app.
+## Tickets
+![image screen1](/assets/blog/ipnx-cpms/screens-1--tickets.jpg)
 
-## Solution
-
-### Value Proposition (Show Don't Tell)
-The “why” of the app wasn’t clear. New users wanted to understand how to begin using the app.
-
-### ON BOARDING
-Guide new users to the “aha” moment for the app. New users had to:
-
-* Set up their proﬁles.
-* Engage with activity from existing users which shows the user what’s possible.
-* Existing users can be followed so as to see available content when using the app.
+## Performance Managment
+![image screen2](/assets/blog/ipnx-cpms/screens-2--perf-mgt.jpg)
