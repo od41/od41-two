@@ -15,32 +15,43 @@ export default function Index({ allProjects }) {
   
   const projects = allProjects.filter((project) => project.flag === 'project').slice(0,2) // filters out all none project posts and slices all but first 2
   const experiments = allProjects.filter((experiment) => experiment.flag === 'experiment').slice(0,3) // filters out all none experiment posts and slices all but first 2
+
+
+
   return (
     <>
       <Layout>
-        <Head>
-          <title>{CMS_NAME}</title>
-        </Head>
-        <Container>
-          <Header />
-          <Intro />
-          
-          {/* {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )} */}
-          {projects.length > 0 && <Work page={'Projects'} projects={projects}  showAll={true} />}
-          {experiments.length > 0 && <Experiment page={'Experiments'} projects={experiments} showAll={true} />}
-        </Container>
+          <Head>
+            <title>{CMS_NAME}</title>
+          </Head>
+          <Container>
+            <Header />
+            <Intro />
+
+            {/* {heroPost && (
+                      <HeroPost
+                        title={heroPost.title}
+                        coverImage={heroPost.coverImage}
+                        date={heroPost.date}
+                        author={heroPost.author}
+                        slug={heroPost.slug}
+                        excerpt={heroPost.excerpt}
+                      />
+                    )} */}
+            {projects.length > 0 && (
+              <Work page={"Projects"} projects={projects} showAll={true} />
+            )}
+            {experiments.length > 0 && (
+              <Experiment
+                page={"Experiments"}
+                projects={experiments}
+                showAll={true}
+              />
+            )}
+          </Container>
       </Layout>
     </>
-  )
+  );
 }
 
 export async function getStaticProps() {

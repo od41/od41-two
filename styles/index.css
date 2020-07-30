@@ -3,26 +3,39 @@
 /* Write your own custom base styles here */
 
 @font-face {
-    font-family: Francois One;
-    font-weight: 400;
-    src: url(https://fonts.googleapis.com/css2?family=Francois+One&display=swap);
-  }
-  @font-face {
-    font-family: Work Sans;
-    font-weight: 400;
-    src: url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap);
-  } 
-  @font-face {
-    font-family: Work Sans;
-    font-weight: 700;
-    src: url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap);
-  }
+  font-family: Francois One;
+  font-weight: 400;
+  src: url(https://fonts.googleapis.com/css2?family=Francois+One&display=swap);
+}
+
+@font-face {
+  font-family: Work Sans;
+  font-weight: 400;
+  src: url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap);
+}
+
+@font-face {
+  font-family: Work Sans;
+  font-weight: 700;
+  src: url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap);
+}
 
 /* Start purging... */
 @tailwind components;
 /* Stop purging. */
 
 /* Write you own custom component styles here */
+
+/* .main--bg {
+  top: 0;
+  left: calc((100% - 1200px)/ 2);
+  width: 100%;
+  height: 8000px;
+  background-image: url(../img/grid.png);
+  opacity: 0.6;
+  transition: .5s all linear;
+  z-index: 9;
+} */
 
 /* Start purging... */
 @tailwind utilities;
