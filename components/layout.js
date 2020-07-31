@@ -6,15 +6,29 @@ export default function Layout({
                                 // preview,
                                 children,
                               }) {
+
+  const styles = {
+    header: {
+      backgroundImage: 'url(assets/images/grid.png)',
+      backgroundAttachment: 'fixed'
+    },
+  
+    content: {
+      height: '100%',
+      width: '100%',
+      backgroundColor: 'rgba(255, 255, 255, 0.5)'
+    }
+  }
+
   return (
     <>
       <Meta />
       <div
         className="min-h-screen"
-        style={{ backgroundImage: `url(assets/images/grid.png)` }}
+        style={styles.header}
       >
         {/* <Alert preview={preview} /> */}
-        <main>{children}</main>
+        <main style={styles.content}>{children}</main>
       </div>
       <Footer />
     </>
