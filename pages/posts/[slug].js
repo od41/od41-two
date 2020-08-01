@@ -10,6 +10,7 @@ import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
+import { motion } from 'framer-motion'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
@@ -17,6 +18,7 @@ export default function Post({ post, morePosts, preview }) {
     return <ErrorPage statusCode={404} />
   }
   return (
+    <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
     <Layout preview={preview}>
       <Container>
         <Header />
@@ -43,6 +45,7 @@ export default function Post({ post, morePosts, preview }) {
         )}
       </Container>
     </Layout>
+    </motion.div>
   )
 }
 

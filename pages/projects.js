@@ -7,6 +7,7 @@ import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import Header from '../components/header'
 import { CMS_NAME } from '../lib/constants'
+import {motion} from 'framer-motion'
 
 export default function Projects({ allProjects }) {
   // const heroPost = allPosts[0]
@@ -14,14 +15,15 @@ export default function Projects({ allProjects }) {
   const projects = allProjects.filter((project) => project.flag === 'project') // hide posts without the "experiment" flag
   return (
     <>
-      <Layout>
-        <Head>
-          <title>{CMS_NAME}</title>
-        </Head>
-        <Container>
-          {/* <Intro /> */}
-          <Header />
-          {/* {heroPost && (
+      <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
+        <Layout>
+          <Head>
+            <title>{CMS_NAME}</title>
+          </Head>
+          <Container>
+            {/* <Intro /> */}
+            <Header />
+            {/* {heroPost && (
             <HeroPost
               title={heroPost.title}
               coverImage={heroPost.coverImage}
@@ -31,11 +33,14 @@ export default function Projects({ allProjects }) {
               excerpt={heroPost.excerpt}
             />
           )} */}
-          {projects.length > 0 && <Work page={'Projects'} projects={projects}  showAll={false} />}
-        </Container>
-      </Layout>
+            {projects.length > 0 && (
+              <Work page={"Projects"} projects={projects} showAll={false} />
+            )}
+          </Container>
+        </Layout>
+      </motion.div>
     </>
-  )
+  );
 }
 
 export async function getStaticProps() {

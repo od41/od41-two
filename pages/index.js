@@ -10,6 +10,9 @@ import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import Header from '../components/header'
 import { CMS_NAME } from '../lib/constants'
+import { motion } from 'framer-motion';
+
+import { growIn } from '../animations/animations'
 
 export default function Index({ allProjects }) {
   // const heroPost = allPosts[0]
@@ -21,12 +24,13 @@ export default function Index({ allProjects }) {
 
   return (
     <>
-      <Layout>
+      <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
+        <Layout>
           <Head>
             <title>{CMS_NAME}</title>
           </Head>
-             <Container>
-              <Header />
+          <Container>
+            <Header />
             <Intro />
 
             {/* {heroPost && (
@@ -40,20 +44,36 @@ export default function Index({ allProjects }) {
                       />
                     )} */}
             {projects.length > 0 && (
-              <Work page={"Projects"} projects={projects} showAll={true} />
+                <Work page={"Projects"} projects={projects} showAll={true} />
             )}
             {experiments.length > 0 && (
-              <Experiment
-                page={"Experiments"}
-                projects={experiments}
-                showAll={true}
-              />
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={{
+                  hidden: {
+                    scale: 0.8,
+                    opacity: 0,
+                  },
+                  visible: {
+                    scale: 1,
+                    opacity: 1,
+                    transition: {
+                      delay: 0.4,
+                    },
+                  },
+                }}
+              >
+                <Experiment
+                  page={"Experiments"}
+                  projects={experiments}
+                  showAll={true}
+                />
+              </motion.div>
             )}
-            
           </Container>
-          
-         
-      </Layout>
+        </Layout>
+      </motion.div>
     </>
   );
 }

@@ -12,7 +12,6 @@ export default function PostPreview({
   details,
   slug,
 }) {
-  console.log(thumbnail)
   return (
     
     <div>
