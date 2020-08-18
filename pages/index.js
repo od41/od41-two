@@ -18,7 +18,7 @@ export default function Index({ allProjects }) {
   // const heroPost = allPosts[0]
   // const morePosts = allPosts.slice(1)
   
-  const projects = allProjects.filter((project) => project.flag === 'project').slice(0,2) // filters out all none project posts and slices all but first 2
+  const projects = allProjects.filter((project) => project.featured === 'featured') // filters out all none project posts and slices all but first 2
   const experiments = allProjects.filter((experiment) => experiment.flag === 'experiment').slice(0,3) // filters out all none experiment posts and slices all but first 2
 
 
@@ -88,6 +88,7 @@ export async function getStaticProps() {
     'thumbnail',
     'excerpt',
     'flag',
+    'featured',
   ])
 
   return {

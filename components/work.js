@@ -14,7 +14,7 @@ export default function Work({ page, projects, showAll }) {
           </motion.h2>
           {showAll ? (
             <motion.div initial="initial" animate="animate" variants={fadeUp} className="text-lg uppercase font-bold font-body hover:underline">
-              <Link href={"/" + page.toLowerCase()}>See all</Link>
+              <Link href={"/" + page.toLowerCase()}><a>See all</a></Link>
             </motion.div>
           ) : (
             ""

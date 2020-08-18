@@ -11,7 +11,8 @@ details:
   method: Usability Testing, Prototyping, Interviews, Adobe XD
 ogImage:
   url: '/assets/blog/ipnx-intranet/cover.jpg'
-flag: project
+flag: 'project'
+featured: 'featured'
 ---
 
 ## Working on it right now... :D

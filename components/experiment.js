@@ -10,7 +10,7 @@ export default function Experiment({ page, projects, showAll }) {
         </h2>
         {showAll ? (
           <div className="text-lg uppercase font-bold font-body hover:underline">
-            <Link href={"/" + page.toLowerCase()}>See all</Link>
+            <Link href={"/" + page.toLowerCase()}><a>See all</a></Link>
           </div>
         ) : (
           ""
