@@ -24,3 +24,7 @@
 .markdown ul li {
   @apply list-disc ml-8;
 }
+
+.markdown a {
+ @apply underline font-bold;
+}
