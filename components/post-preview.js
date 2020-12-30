@@ -62,8 +62,6 @@ export default function PostPreview({
           <p className="font-body text-xs uppercase text-white font-extralight mb-3">{details.method}</p>
 
           {link === 'empty' ? "" : <a href={link.url} className="capitlize font-body font-bold text-sm px-4 py-2 bg-white rounded-md focus:outline-sm hover:bg-gray-300" target="blank">{link.name}</a>}
-          {console.log((link === 'empty' ? "" : link.name), title)}
-
 
         </motion.div>
         <motion.div variants={overlayMotion} style={backgroundOverlay}></motion.div>
