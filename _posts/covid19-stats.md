@@ -1,6 +1,6 @@
 ---
 title: 'COVID19 Stats'
-excerpt: 'This experiment...'
+excerpt: 'Data can be abstract, and if not presented visually can make people unable to grasp viscerally. The right visualisations helps people understand how COVID-19 is spreading in their country and guides them to appropriate precautions to be safe.'
 coverImage: '/assets/blog/lab/covid19-cover.jpg'
 thumbnail: '/assets/blog/lab/covid19-thumb.jpg'
 date: 'January 2020'
@@ -11,7 +11,9 @@ details:
   method: 'Adobe XD, React, D3'
 ogImage:
   url: '/assets/blog/lab/cover.jpg'
-flag: 'experiment'
+flag: 'project'
+index: 4
+
 ---
 
 

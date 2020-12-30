@@ -1,4 +1,4 @@
-import {useEffect, useRef} from 'react';
+import { useEffect, useRef } from 'react';
 
 import Container from '../components/container'
 import Work from '../components/work'
@@ -17,9 +17,22 @@ import { growIn } from '../animations/animations'
 export default function Index({ allProjects }) {
   // const heroPost = allPosts[0]
   // const morePosts = allPosts.slice(1)
-  
-  const projects = allProjects.filter((project) => project.featured === 'featured') // filters out all none project posts and slices all but first 2
-  const experiments = allProjects.filter((experiment) => experiment.flag === 'experiment').slice(0,3) // filters out all none experiment posts and slices all but first 2
+
+  // const projects = allProjects.filter((project) => project.featured === 'featured') // filters out all none project posts and slices all but first 2
+  // const experiments = allProjects.filter((experiment) => experiment.flag === 'experiment').slice(0, 3) // filters out all none experiment posts and slices all but first 2
+
+  const projects = allProjects.sort(compare) // all project posts
+
+  function compare(a, b) {
+    if (a.index < b.index) {
+      return -1;
+    }
+    if (a.index > b.index) {
+      return 1;
+    }
+    return 0;
+  }
+
 
 
   return (
@@ -44,9 +57,9 @@ export default function Index({ allProjects }) {
                       />
                     )} */}
             {projects.length > 0 && (
-                <Work page={"Projects"} projects={projects} showAll={true} />
+              <Work page={"Projects"} projects={projects} showAll={false} />
             )}
-            {experiments.length > 0 && (
+            {/* {experiments.length > 0 && (
               <motion.div
                 initial="hidden"
                 animate="visible"
@@ -70,7 +83,7 @@ export default function Index({ allProjects }) {
                   showAll={true}
                 />
               </motion.div>
-            )}
+            )} */}
           </Container>
         </Layout>
       </motion.div>
@@ -80,6 +93,7 @@ export default function Index({ allProjects }) {
 
 export async function getStaticProps() {
   const allProjects = getAllPosts([
+    'index',
     'title',
     'date',
     'slug',

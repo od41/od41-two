@@ -2,7 +2,7 @@ import PostPreview from '../components/post-preview'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
-import {growIn, fadeUp} from '../animations/animations'
+import { growIn, fadeUp } from '../animations/animations'
 
 export default function Work({ page, projects, showAll }) {
   return (
@@ -17,25 +17,25 @@ export default function Work({ page, projects, showAll }) {
               <Link href={"/" + page.toLowerCase()}><a>See all</a></Link>
             </motion.div>
           ) : (
-            ""
-          )}
+              ""
+            )}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 md:col-gap-16 lg:col-gap-32 row-gap-20 md:row-gap-32 mb-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 sm:col-gap-8 md:col-gap-16 row-gap-16 md:row-gap-24 mb-24">
           {projects.map((project) => (
-            <motion.div key={project.slug} initial="initial" animate="animate" variants={growIn} whileTap={{scale:.99}}>
+            <motion.div key={project.slug} initial="initial" animate="animate" variants={growIn} whileTap={{ scale: .99 }}>
               <PostPreview
-              
-              title={project.title}
-              coverImage={project.coverImage}
-              thumbnail={project.thumbnail}
-              date={project.date}
-              details={project.details}
-              slug={project.slug}
-              excerpt={project.excerpt}
-            />
+
+                title={project.title}
+                coverImage={project.coverImage}
+                thumbnail={project.thumbnail}
+                date={project.date}
+                details={project.details}
+                slug={project.slug}
+                excerpt={project.excerpt}
+              />
             </motion.div>
-            
+
           ))}
         </div>
       </section>
