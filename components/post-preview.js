@@ -47,6 +47,9 @@ export default function PostPreview({
 
   const backgroundOverlay = { width: '112%', height: '100%', background: 'linear-gradient(0deg, #000 0%, rgba(0,0,0,0.3) 33%,rgba(0,0,0,0) 100%)', position: 'absolute', bottom: '0', left: '0', opacity: '0.1', translateX: '-5%', zIndex: '0' }
 
+  if (true) {
+
+  }
   return (
 
     <div >
@@ -61,7 +64,8 @@ export default function PostPreview({
           <h5 className="font-display uppercase text-xs text-gray-200" >Tools & Methods</h5>
           <p className="font-body text-xs uppercase text-white font-extralight mb-3">{details.method}</p>
 
-          {link === 'empty' ? "" : <a href={link.url} className="capitlize font-body font-bold text-sm px-4 py-2 bg-white rounded-md focus:outline-sm hover:bg-gray-300" target="blank">{link.name}</a>}
+          {link.name != '' ? <a href={link.url} className="capitlize font-body font-bold text-sm px-4 py-2 bg-white rounded-md focus:outline-sm hover:bg-gray-300" target="blank">{link.name}
+          </a> : null}
 
         </motion.div>
         <motion.div variants={overlayMotion} style={backgroundOverlay}></motion.div>

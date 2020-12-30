@@ -12,5 +12,7 @@ ogImage:
   url: '/assets/blog/projectpay/cover.jpg'
 flag: project
 index: 5
-link: 'empty'
+link:
+  url: ''
+  name: ''
 ---

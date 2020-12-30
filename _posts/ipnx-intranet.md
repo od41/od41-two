@@ -14,6 +14,8 @@ ogImage:
 flag: 'project'
 featured: 'featured'
 index: 3
-link: 'empty'
+link:
+  url: ''
+  name: ''
 ---
 
