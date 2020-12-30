@@ -13,6 +13,7 @@ export default function PostPreview({
   excerpt,
   details,
   slug,
+  link
 }) {
 
   const toolsMotion = {
@@ -56,11 +57,14 @@ export default function PostPreview({
         className="mb-5" style={{ position: 'relative', cursor: 'crosshair' }}>
         <CoverImage slug={slug} title={title} src={thumbnail} />
 
-        <motion.div variants={toolsMotion} className="text-lg mb-4" style={{ position: 'absolute', bottom: '0', zIndex: '10' }}>
+        <motion.div variants={toolsMotion} className="text-lg mb-6" style={{ position: 'absolute', bottom: '0', zIndex: '10' }}>
           <h5 className="font-display uppercase text-xs text-gray-200" >Tools & Methods</h5>
-          <p className="font-body text-xs uppercase text-white font-extralight">{details.method}</p>
+          <p className="font-body text-xs uppercase text-white font-extralight mb-3">{details.method}</p>
 
-          {/* <p style={{ textTransform: 'uppercase' }}>HTML/CSS, React, D3.js, Adobe XD</p> */}
+          {link === 'empty' ? "" : <a href={link.url} className="capitlize font-body font-bold text-sm px-4 py-2 bg-white rounded-md focus:outline-sm hover:bg-gray-300" target="blank">{link.name}</a>}
+          {console.log((link === 'empty' ? "" : link.name), title)}
+
+
         </motion.div>
         <motion.div variants={overlayMotion} style={backgroundOverlay}></motion.div>
       </motion.div>

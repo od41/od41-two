@@ -13,14 +13,8 @@ ogImage:
   url: '/assets/blog/lab/cover.jpg'
 flag: project
 index: 6
+link:
+  name: Launch Demo
+  url: 'https://3pldbl-basketball-news.vercel.app/'
 
 ---
-
-## Summary
-This is a simple app that reads basketball news from multiple RSS feeds and displays them in chronological order. 
-
-From the NBA to Euroleague, team standings, player news etc.
-
-RSS Feeds are from ESPN, Euroleague & Talkbasket.
-
- [View Demo](https://3pldbl-basketball-news.vercel.app/)

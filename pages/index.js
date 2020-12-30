@@ -94,6 +94,7 @@ export default function Index({ allProjects }) {
 export async function getStaticProps() {
   const allProjects = getAllPosts([
     'index',
+    'link',
     'title',
     'date',
     'slug',

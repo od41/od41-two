@@ -1,6 +1,6 @@
 ---
-title: 'COVID19 Stats'
-excerpt: 'Data can be abstract, and if not presented visually can make people unable to grasp viscerally. The right visualisations helps people understand how COVID-19 is spreading in their country and guides them to appropriate precautions to be safe.'
+title: 'COVID19 Tracker'
+excerpt: 'Data visualisation design and development to help people grasp the impact of COVID-19 locally so that they take safety precautions.'
 coverImage: '/assets/blog/lab/covid19-cover.jpg'
 thumbnail: '/assets/blog/lab/covid19-thumb.jpg'
 date: 'January 2020'
@@ -13,7 +13,9 @@ ogImage:
   url: '/assets/blog/lab/cover.jpg'
 flag: 'project'
 index: 4
-
+link: 
+  name: Launch Demo
+  url: 'https://covid19-visualiser.od41.vercel.app/'
 ---
 
 

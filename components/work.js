@@ -33,6 +33,7 @@ export default function Work({ page, projects, showAll }) {
                 details={project.details}
                 slug={project.slug}
                 excerpt={project.excerpt}
+                link={project.link}
               />
             </motion.div>
 
