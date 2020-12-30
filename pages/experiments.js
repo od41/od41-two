@@ -53,6 +53,7 @@ export async function getStaticProps() {
     'thumbnail',
     'excerpt',
     'flag',
+    'link'
   ])
 
   return {

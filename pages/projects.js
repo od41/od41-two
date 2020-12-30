@@ -7,7 +7,7 @@ import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import Header from '../components/header'
 import { CMS_NAME } from '../lib/constants'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 export default function Projects({ allProjects }) {
   // const heroPost = allPosts[0]
@@ -53,6 +53,7 @@ export async function getStaticProps() {
     'thumbnail',
     'excerpt',
     'flag',
+    'link'
   ])
 
   return {
