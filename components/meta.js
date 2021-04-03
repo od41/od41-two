@@ -29,6 +29,7 @@ export default function Meta() {
       />
       <link href={`https://fonts.googleapis.com/css2?family=Francois+One&family=Work+Sans:wght@400;700&display=swap`} rel="stylesheet" />
       <link rel="shortcut icon" href="/favicon/favicon.ico" />
+      <meta name="google-site-verification" content="dMFqaapR6Gaa6ZSeyRLqSjW9PoOi-_gne5DV53_I570" />
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />
